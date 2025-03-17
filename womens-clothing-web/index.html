@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance - Ladies' Fashion Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Elegance</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <i class="fas fa-search"></i>
+                </div>
+                <i class="fas fa-user" id="userIcon"></i>
+                <i class="fas fa-heart"></i>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal" id="authModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+            <div class="auth-forms">
+                <form id="loginForm" class="active">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <form id="registerForm">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Empowering Elegance,<br>One Outfit at a Time</h1>
+                <p>Discover our latest collection of sophisticated and stylish clothing</p>
+                <button class="cta-button">Shop Now</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>On orders over $100</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Always here to help</p>
+                </div>
+            </div>
+        </section>
+
+       <!-- Featured Collections -->
+       <section class="featured-collections">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="product-grid">
+                <!-- Products will be dynamically added here -->
+            </div>
+            <div class="view-all">
+                <a href="collections.html" class="view-all-btn">View All Collections</a>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <a href="collections.html?category=dresses" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800" alt="Dresses">
+                    <div class="category-overlay">
+                        <h3>Dresses</h3>
+                        <p>Elegant & Timeless</p>
+                    </div>
+                </a>
+                <a href="collections.html?category=office" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1632149877166-f75d49000351?w=800" alt="Office Wear">
+                    <div class="category-overlay">
+                        <h3>Office Wear</h3>
+                        <p>Professional & Chic</p>
+                    </div>
+                </a>
+                <a href="collections.html?category=casual" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800" alt="Casual Wear">
+                    <div class="category-overlay">
+                        <h3>Casual Wear</h3>
+                        <p>Comfortable & Stylish</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our Newsletter</h2>
+                <p>Sign up and get 10% off your first order!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Elegance is your destination for sophisticated and stylish women's fashion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#products">Collections</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elegance. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <footer>
+        <!-- ... (previous footer content) ... -->
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
